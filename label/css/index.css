@@ -1,0 +1,54 @@
+
+.header_top
+{
+    background-color: #326e51;
+}
+.nav_header_top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 10px 0;
+}
+.nav_header_top_store,
+.nav_header_top_phone
+{
+    display: flex;
+    align-items: center;
+    gap: 0 6px;
+}
+.nav_header_top_store_icon,
+.nav_header_top_phone_icon
+{
+    color: #fff ;
+    font-size: 14px;
+}
+.nav_header_top_store_text,
+.nav_header_top_phone_text
+{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.25px;
+    line-height: 24px;
+    transition: all 0.3s ease;
+}
+.nav_header_top_store_text:hover,
+.nav_header_top_phone_text:hover
+{
+    color: #bbbbbb;
+}
+.nav_header_bootm_menu
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_header_bottom_logo_img
+{
+    object-fit: contain;
+    width: 150px;
+}
+.nav_header_bottom_logo_img:hover
+{
+    cursor: pointer;
+}
