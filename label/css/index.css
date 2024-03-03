@@ -37,6 +37,11 @@
 {
     color: #bbbbbb;
 }
+.header_bottom
+{
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.2);
+    padding: 2px 0;
+}
 .nav_header_bootm_menu
 {
     display: flex;
@@ -51,4 +56,106 @@
 .nav_header_bottom_logo_img:hover
 {
     cursor: pointer;
+}
+.nav_header_bottom_list
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 30px;
+    list-style: none;
+}
+.nav_header_bottom_link
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.25px;
+    transition: all 0.3s ease;
+    font-weight: bold
+}
+.nav_header_bottom_link:hover
+{
+    color: #bbbbbb;
+}
+.nav_header_bottom_item
+{
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav_header_bottom_item_second_list
+{
+    position: absolute;
+    background-color: #efeeee;
+    padding: 15px 0;
+    list-style: none;
+    width: 200px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    border-radius: 5px;
+    /* gap: 20px 0; */
+}
+.nav_header_bottom_item_second_item
+{
+    padding: 6px 0;
+    transition: all 0.3s ease;
+    /* border-bottom:1px solid #000; */
+}
+.nav_header_bottom_item_second_link
+{
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #000;
+}
+.nav_header_bottom_item_second_item:hover .nav_header_bottom_item_second_link
+{
+    border-bottom:1px solid #000;
+    /* background-color: #e2dede; */
+    /* padding: 0px 16px; */
+}
+.nav_header_bottom_item:hover .nav_header_bottom_item_second_list
+{
+    display: block;
+}
+/* phần chức năng của trang web */
+.tool
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 0 20px
+}
+.tool_link
+{
+    text-decoration: none;
+}
+.buy_icon,
+.search_icon
+{
+    font-size: 24px;
+    color: #000;
+    transition: all 0.3s ease;
+}
+.buy_icon
+{
+    position: relative;
+}
+.buy_icon::after
+{
+    content: "0";
+    position: absolute;
+    font-size: 8px;
+    background-color: red;
+    padding: 4px;
+    color: #fff;
+    border-radius: 50%;
+    top: 0;
+
+}
+.buy_icon:hover,
+.search_icon:hover
+{
+    color: #bbbbbb;
 }
